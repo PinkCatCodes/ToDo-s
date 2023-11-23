@@ -1,0 +1,23 @@
+@page "/Logout"
+@using BlazorWASM.Services
+@inject IAuthService authService
+@inject NavigationManager navMgr
+
+<h3>Logout</h3>
+
+<Authorized>
+    <div class="field">
+        <button class="logout" @onclick="LogoutAsync">Log out</button>
+                
+    </div>
+</Authorized>
+
+@code {
+    private async Task LogoutAsync()
+    {
+        await authService.LogoutAsync();
+        navMgr.NavigateTo("/");
+    }
+
+    
+}

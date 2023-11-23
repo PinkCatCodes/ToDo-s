@@ -1,0 +1,19 @@
+{
+  "Users": [
+    {
+      "Id": 1,
+      "UserName": "Amazing5"
+    }
+  ],
+  "Todos": [
+    {
+      "Id": 1,
+      "Owner": {
+        "Id": 1,
+        "UserName": "Amazing5"
+      },
+      "Title": "read book",
+      "IsCompleted": false
+    }
+  ]
+}
